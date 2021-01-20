@@ -2,12 +2,10 @@ import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class DropdownService {
 
-  private url = 'http://localhost:9000/api/dropdownservice';
+  private url = 'http://localhost:8083/dropdownservice';
 
   constructor(private http: HttpClient) {
   }

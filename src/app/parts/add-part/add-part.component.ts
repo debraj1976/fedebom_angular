@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {Router} from "@angular/router";
-import {PartService} from "../part-service.service";
+import {PartService} from "../../../services/part-service.service";
 
 @Component({
   selector: 'app-add-part',

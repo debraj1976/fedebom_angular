@@ -3,12 +3,10 @@ import { HttpClient } from '@angular/common/http';
 import { HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class PartService {
 
-  private url = 'http://localhost:9000/api/parthistoryservice';
+  private url = 'http://localhost:8083/parthistoryservice';
 
   constructor(private http: HttpClient) {
   }

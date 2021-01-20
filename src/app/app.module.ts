@@ -9,7 +9,9 @@ import {AddPartComponent} from "./parts/add-part/add-part.component";
 import {ReactiveFormsModule} from "@angular/forms";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations"; 
 import { BsDatepickerModule } from "ngx-bootstrap/datepicker";
-import { ExcelService } from './parts/excel.service';
+import { ExcelService } from '../services/excel.service';
+import { DropdownService } from 'src/services/dropdown-service.service';
+import { PartService } from 'src/services/part-service.service';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,11 @@ import { ExcelService } from './parts/excel.service';
     BrowserAnimationsModule,
     BsDatepickerModule.forRoot()
   ],
-  providers: [ExcelService],
+  providers: [
+    ExcelService,
+    DropdownService,
+    PartService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

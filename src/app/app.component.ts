@@ -1,12 +1,12 @@
 
 import { Component, OnInit, ViewChild, ElementRef} from '@angular/core';
-import { Part } from './parts/part';
-import { PartHistory } from './parts/parthistory';
-import { PartService } from './parts/part-service.service';
-import { ExcelService } from './parts/excel.service';
-import { DropdownService } from './parts/dropdown-service.service';
+import { Part } from '../services/models/part';
+import { PartHistory } from '../services/models/parthistory';
+import { PartService } from '../services/part-service.service';
+import { ExcelService } from '../services/excel.service';
+import { DropdownService } from '../services/dropdown-service.service';
 import { Router } from "@angular/router";
-import { Dropdown } from './parts/dropdown';
+import { Dropdown } from '../services/models/dropdown';
 import * as XLSX from 'xlsx';
 //import { debug } from 'console';
 
